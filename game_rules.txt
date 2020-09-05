@@ -1,0 +1,41 @@
+tạo folder để chạy chương trình như sau:
+./
+data/
+    player1/
+        GAME.exe
+    player2/
+        GAME.exe
+lc_console.py
+
+code người chơi trong file GAME.* (* = cpp, py, pas, ...), chương trình chấm chỉ chạy file .exe (phần compile và copy vào folder giám khảo sẽ làm :v)
+
+file GAME.INP:
+
+dòng đầu chứa 1 số là player_id
+dòng 2 chứa 1 số là turn
+dòng 3 chứa 1 số là N
+N dòng sau mỗi dòng chứa N character thuộc {'0', '1', '2'}
+- 0 -> đất trống
+- 1 -> đất của player-1
+- 2 -> đất của player-2
+
+file GAME.OUT:
+
+có 2 dạng output:
+1/ SET r c:
+- set board[r][c] = player_id 
+- điều kiện:
+    - board[r][c] == '0' 
+    - 1 trong 4 neighbors có đất của player_id 
+
+
+2/ MOVE old_r old_c new_r new_c:
+- di chuyển 1 ô của mình từ (old_r, old_c) đến (new_r, new_c) và set board[old_r][old_c] thành '0'
+- điều kiện: 
+    - board[new_r][new_c] == '0'
+    - board[old_r][old_c] == player_id
+
+
+chỉ đọc dòng đầu output, output ko hợp lệ thì mất lượt
+tất cả các chỉ số đều index từ 1
+
