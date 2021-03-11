@@ -1,3 +1,19 @@
+link ý tưởng
+https://docs.google.com/document/d/1sCz0oRW0W_dRrkQjnmrsO5ZL0vzoG5ncWUpoPS6YkRI/edit
+
+---
+[2-4 người - Chiếm đất]
+
+- Bản đồ MxN
+- mỗi người chơi sẽ xuất phát từ 1 ô có cạnh là 1 phần của cạnh của bản đồ (tức là hàng/cột = 1 hoặc M hoặc N)
+- mỗi lượt, mối người chơi sẽ có các lựa chọn
+    - sinh ra 1 phần mới của mình ở ô mà có ít nhất 1 ô của mình chung cạnh (4 hướng)
+    - di chuyển 1 ô của mình đến 1 nơi bất kì trên bản đồ
+    - chưa nghĩ ra … :v
+- trò chơi kết thúc khi tất cả các ô đều được đánh dấu
+- người thắng là người có số ô trên bản đồ cao nhất 
+---
+
 tạo folder để chạy chương trình như sau:
 ./
 data/
